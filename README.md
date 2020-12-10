@@ -7,7 +7,7 @@ Options:
 
 `sustop filename` - Absolutely nothing
 
-`sustop -s` - Kills your current console session
+`sustop -s` - Absolutely nothing, but with a message
 
 `sustop -v` - Prints the version number
 
