@@ -1,4 +1,15 @@
-int main()
+#include <iostream>
+
+int main(int argc, char *argv[])
 {
-  // stuff goes here i'll do it in a bit
+  if (argc > 2)
+  {
+    cout<<"Too many arguments."<<endl;
+    return 0;
+  }
+  switch (argv[1])
+  {
+    case "-s":
+      
+  }
 }
