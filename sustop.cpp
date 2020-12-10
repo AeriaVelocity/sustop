@@ -1,40 +1,55 @@
 #include <iostream>
-#include <string>
 #include <cstdlib>
+#include <cstring>
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-  string nothing;
+  int nothing;
   if (argc < 1)
   {
-      //nothing
+      return 0;
   }
+  
   if (argc > 2)
   {
       cout<<"Too many arguments."<<endl;
+      return 0;
   }
-  if (argv[1] == "-s")
+
+  if (strcmp(argv[1], "-s") == 0)
   {
       cout<<"#~ ";
-      getline(cin, nothing);
-      cout<<"Just kidding. No root for you."<<endl;
+      try
+      {
+        cin>>nothing;
+      }
+      catch (...) {}
+      cout<<endl<<"Just kidding. No root for you."<<endl;
+      return 0;
   }
-  if (argv[1] == "-v")
+
+  if (strcmp(argv[1], "-v") == 0)
   {
       cout<<"sustop version 1"<<endl;
+      return 0;
   }
-  if (argv[1] == "-h")
+
+  if (strcmp(argv[1], "-h") == 0)
   {
       cout<<"sustop is a joke command that does absolutely nothing of importance."<<endl<<endl<<"Feel free to check me out at https://github.com/SpeedStriker243."<<endl;
+      return 0;
   }
-  if (argv[1] == "--help")
+
+  if (strcmp(argv[1], "--help") == 0)
   {
       cout<<"sustop is a joke command that does absolutely nothing of importance."<<endl<<endl<<"Feel free to check me out at https://github.com/SpeedStriker243."<<endl;
+      return 0;
   }
-  if (argv[1] == "-k")
+
+  if (strcmp(argv[1], "-k") == 0)
   {
       system("exit");
+      return 0;
   }
-  return 0;
 }
