@@ -1,34 +1,40 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+using namespace std;
 
 int main(int argc, char *argv[])
 {
   string nothing;
+  if (argc < 1)
+  {
+      //nothing
+  }
   if (argc > 2)
   {
-    cout<<"Too many arguments."<<endl;
-    return 0;
+      cout<<"Too many arguments."<<endl;
   }
-  switch (argv[1])
+  if (argv[1] == "-s")
   {
-    case "-s":
       cout<<"#~ ";
-      getline();
+      getline(cin, nothing);
       cout<<"Just kidding. No root for you."<<endl;
-      break;
-    case "-v":
+  }
+  if (argv[1] == "-v")
+  {
       cout<<"sustop version 1"<<endl;
-      break;
-    case "-h":
+  }
+  if (argv[1] == "-h")
+  {
       cout<<"sustop is a joke command that does absolutely nothing of importance."<<endl<<endl<<"Feel free to check me out at https://github.com/SpeedStriker243."<<endl;
-      break;
-    case "--help":
+  }
+  if (argv[1] == "--help")
+  {
       cout<<"sustop is a joke command that does absolutely nothing of importance."<<endl<<endl<<"Feel free to check me out at https://github.com/SpeedStriker243."<<endl;
-      break;
-    case "-k":
+  }
+  if (argv[1] == "-k")
+  {
       system("exit");
-      break;
   }
   return 0;
 }
