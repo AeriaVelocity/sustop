@@ -13,6 +13,6 @@ Options:
 
 `sustop -h` or `sustop --help` - Prints help
 
-`sustop -k` - Tells you to use `sustop -s` instead
+`sustop -k` - Fails correctly.
 
 `sustop -b` - Attempts to run `sustop` in the background, but it doesn't work.
