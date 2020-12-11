@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 
   if (strcmp(argv[1], "-k") == 0)
   {
-      system("exit");
+      cout<<"This program has been terminated successfully."<<endl;
       return 0;
   }
 }
