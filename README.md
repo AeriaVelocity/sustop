@@ -13,7 +13,7 @@ Options:
 
 `sustop -h` - Prints "help"
 
-`sustop --help`- Opens this page in your browser
+`sustop --help`- Displays this message in your command prompt/terminal
 
 `sustop -k` - Terminates itself
 
