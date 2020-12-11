@@ -11,7 +11,9 @@ Options:
 
 `sustop -v` - Prints the version number
 
-`sustop -h` or `sustop --help` - Prints help
+`sustop -h` - Prints "help"
+
+`sustop --help`- Opens this page in your browser
 
 `sustop -k` - Terminates itself
 
