@@ -13,6 +13,6 @@ Options:
 
 `sustop -h` or `sustop --help` - Prints help
 
-`sustop -k` - Closes your command prompt/terminal.
+`sustop -k` - Closes your command prompt/terminal. (doesn't currently work)
 
 `sustop -b` - Attempts to run `sustop` in the background, but it doesn't work.
