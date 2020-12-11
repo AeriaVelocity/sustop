@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 
   if (strcmp(argv[1], "--help") == 0)
   {
-      cout<<"sustop filename - Absolutely nothing"<<endl<<"sustop -s - Grants "root" access"<<endl<<"sustop -v - Prints the version number"<<endl<<"sustop -h - Prints 'help'"<<endl<<"sustop --help- Displays this message"<<endl<<"sustop -k - Terminates itself"<<endl<<"sustop -b - Attempts to run sustop in the background, but it doesn't work."<<endl;
+      cout<<"sustop filename - Absolutely nothing"<<endl<<"sustop -s - Grants 'root' access"<<endl<<"sustop -v - Prints the version number"<<endl<<"sustop -h - Prints 'help'"<<endl<<"sustop --help- Displays this message"<<endl<<"sustop -k - Terminates itself"<<endl<<"sustop -b - Attempts to run sustop in the background, but it doesn't work."<<endl;
       return 0;
   }
 
