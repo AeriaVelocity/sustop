@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
-#include <curl>
 using namespace std;
 
 int main(int argc, char *argv[])
