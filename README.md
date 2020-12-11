@@ -7,7 +7,7 @@ Options:
 
 `sustop filename` - Absolutely nothing
 
-`sustop -s` - Absolutely nothing, but with a message
+`sustop -s` - Grants "root" access
 
 `sustop -v` - Prints the version number
 
