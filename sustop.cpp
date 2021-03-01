@@ -6,6 +6,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
   int nothing;
+  char c = *argv[1];
   if (argc < 1)
   {
       return 0;
@@ -57,5 +58,16 @@ int main(int argc, char *argv[])
   {
       cout<<"Failed to open any background process."<<endl<<"Reason: feature not implemented"<<endl;
       return 0;
+  }
+
+  if (c == '-')
+  {
+      cout<<"The argument '"<<argv[1]<<"' was not understood and is probably a figment of your imagination."<<endl;
+      cout<<"If you want it added, open up an issue on the GitHub repo (type 'sustop -h' for a link)"<<endl;
+  }
+
+  else
+  {
+      cout<<"The program '"<<argv[1]<<"' was not found or never existed. So leave me alone."<<endl;
   }
 }
