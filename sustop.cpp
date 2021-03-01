@@ -44,7 +44,14 @@ int main(int argc, char *argv[])
 
   if (strcmp(argv[1], "--help") == 0)
   {
-      cout<<"sustop filename - Absolutely nothing"<<endl<<"sustop -s - Grants 'root' access"<<endl<<"sustop -v - Prints the version number"<<endl<<"sustop -h - Prints 'help'"<<endl<<"sustop --help - Displays this message"<<endl<<"sustop -k - Terminates itself"<<endl<<"sustop -b - Attempts to run sustop in the background, but it doesn't work."<<endl;
+      cout<<"sustop filename - Absolutely nothing"<<endl;
+      cout<<"sustop -s - Grants 'root' access"<<endl;
+      cout<<"sustop -v - Prints the version number"<<endl;
+      cout<<"sustop -h - Prints 'help'"<<endl;
+      cout<<"sustop --help - Displays this message"<<endl;
+      cout<<"sustop -k - Terminates itself"<<endl;
+      cout<<"sustop -b - Attempts to run sustop in the background"<<endl;
+      cout<<"sustop --install - Installs the program"<<endl;
       return 0;
   }
 
@@ -56,14 +63,32 @@ int main(int argc, char *argv[])
 
   if (strcmp(argv[1], "-b") == 0)
   {
-      cout<<"Failed to open any background process."<<endl<<"Reason: feature not implemented"<<endl;
+      cout<<"Failed to open any background process."<<endl;
+      cout<<"Reason: feature not implemented"<<endl;
+      return 0;
+  }
+
+  if (strcmp(argv[1], "--install") == 0)
+  {
+      cout<<"This program lacks the privileges to install itself and is too lazy to request them."<<endl<<endl;
+      cout<<"On macOS, Linux or any other Unix-based system, type 'sudo cp ./sustop /bin/' and enter your user password."<<endl;
+      cout<<"Leave out 'sudo' if you are already root."<<endl<<endl;
+      cout<<"On Windows, just copy 'sustop.exe' to a folder that is in your PATH."<<endl;
+      cout<<"This is usually C:\\Windows\\System32, but you can configure this."<<endl;
       return 0;
   }
 
   if (c == '-')
   {
       cout<<"The argument '"<<argv[1]<<"' was not understood and is probably a figment of your imagination."<<endl;
-      cout<<"If you want it added, open up an issue on the GitHub repo (type 'sustop -h' for a link)"<<endl;
+      if (strcmp(argv[1], "-i") == 0)
+      {
+          cout<<"You're probably looking for '--install'."<<endl;
+      }
+      else
+      {
+          cout<<"If you want it added, open up an issue on the GitHub repo (type 'sustop -h' for a link)"<<endl;
+      }
   }
 
   else

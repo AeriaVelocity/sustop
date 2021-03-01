@@ -5,7 +5,7 @@ This program works like `sudo` except it does absolutely nothing. Think of it li
 
 Options:
 
-`sustop filename` - Absolutely nothing
+`sustop filename` - Opens a program -- wait, never mind, it doesn't.
 
 `sustop -s` - Grants "root" access
 
@@ -17,4 +17,6 @@ Options:
 
 `sustop -k` - Terminates itself
 
-`sustop -b` - Attempts to run `sustop` in the background, but it doesn't work.
+`sustop -b` - Attempts to run `sustop` in the background
+
+`sustop --install` - Installs the program
