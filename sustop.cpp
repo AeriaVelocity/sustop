@@ -1,20 +1,40 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
+#include <string>
+#ifdef unix
+#include <unistd.h>
+#endif
+
 using namespace std;
+
+void achievement(char message[])
+{
+    printf("\033[33mAchievement Get:\033[0m %s\n\n", message);
+}
 
 int main(int argc, char *argv[])
 {
+  if (argc < 2)
+  {
+      cout<<"Type something first!"<<endl;
+      achievement("Ooh, What Does This Do?");
+      exit(1);
+  }
+
   int nothing;
   char c = *argv[1];
-  if (argc < 1)
+
+  if (geteuid() == 0)
   {
-      return 0;
+      cout<<"Did you seriously just run sustop under sudo/root?!"<<endl;
+      achievement("Burnt Fire");
   }
   
   if (argc > 2)
   {
-      cout<<"Too many arguments."<<endl;
+      cout<<"sustop cannot handle this amount of words. Please stop."<<endl;
+      achievement("Hippopotomonstrosesquipedaliophobia-itis");
       return 0;
   }
 
@@ -39,6 +59,13 @@ int main(int argc, char *argv[])
   if (strcmp(argv[1], "-h") == 0)
   {
       cout<<"sustop is a joke command that does absolutely nothing of importance."<<endl<<endl<<"Feel free to check me out at https://github.com/SpeedStriker243."<<endl;
+      return 0;
+  }
+
+  if (strcmp(argv[1], "sustop") == 0)
+  {
+      cout<<"Fatal: sustop got stuck in an infinite loop"<<endl;
+      achievement("Stop Stopping!");
       return 0;
   }
 
