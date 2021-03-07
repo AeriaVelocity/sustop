@@ -8,9 +8,9 @@
 
 using namespace std;
 
-void achievement(char message[])
+void achievement(string message)
 {
-    printf("\033[33mAchievement Get:\033[0m %s\n\n", message);
+    cout<<"\033[33mAchievement Get:\033[0m" << message << endl << endl;
 }
 
 int main(int argc, char *argv[])
