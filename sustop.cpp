@@ -12,7 +12,7 @@ void achievement(string message)
 {
     /* Prints to the console "Achievement Get: <achievement text>"
     with "Achievement Get:" in yellow. */
-    
+
     cout<<"\033[33mAchievement Get:\033[0m " << message << endl << endl;
 }
 
@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
   if (strcmp(argv[1], "--install") == 0)
   {
       cout<<"This program lacks the privileges to install itself and is too lazy to request them."<<endl<<endl;
-      cout<<"On macOS, Linux or any other Unix-based system, type 'sudo cp ./sustop /bin/' and enter your user password."<<endl;
+      cout<<"On macOS, Linux or any other Unix-based system, type 'sudo cp ./sustop /usr/bin' and enter your user password."<<endl;
       cout<<"Leave out 'sudo' if you are already root."<<endl<<endl;
       cout<<"On Windows, just copy 'sustop.exe' to a folder that is in your PATH."<<endl;
       cout<<"This is usually C:\\Windows\\System32, but you can configure this."<<endl;
