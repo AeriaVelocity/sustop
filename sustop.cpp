@@ -10,7 +10,9 @@ using namespace std;
 
 void achievement(string message)
 {
-    cout<<"\033[33mAchievement Get:\033[0m" << message << endl << endl;
+    /* Prints to the console "Achievement Get: <achievement text>"
+    with "Achievement Get:" in yellow. */
+    cout<<"\033[33mAchievement Get:\033[0m " << message << endl << endl;
 }
 
 int main(int argc, char *argv[])
