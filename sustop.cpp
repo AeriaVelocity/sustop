@@ -12,26 +12,31 @@ void achievement(string message)
 {
     /* Prints to the console "Achievement Get: <achievement text>"
     with "Achievement Get:" in yellow. */
+    
     cout<<"\033[33mAchievement Get:\033[0m " << message << endl << endl;
 }
 
 int main(int argc, char *argv[])
 {
-  if (argc < 2)
-  {
-      cout<<"Type something first!"<<endl;
-      achievement("Ooh, What Does This Do?");
-      exit(1);
-  }
-
-  int nothing;
-  char c = *argv[1];
-
   if (geteuid() == 0)
   {
       cout<<"Did you seriously just run sustop under sudo/root?!"<<endl;
       achievement("Burnt Fire");
   }
+
+  if (argc < 2)
+  {
+    if (geteuid() == 0)
+    {
+        exit(1);
+    }
+    cout<<"Type something first!"<<endl;
+    achievement("Ooh, What Does This Do?");
+    exit(1);
+  }
+
+  int nothing;
+  char c = *argv[1];
   
   if (argc > 2)
   {
