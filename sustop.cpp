@@ -18,18 +18,22 @@ void achievement(string message)
 
 int main(int argc, char *argv[])
 {
+  #ifdef unix
   if (geteuid() == 0)
   {
       cout<<"Did you seriously just run sustop under sudo/root?!"<<endl;
       achievement("Burnt Fire");
   }
+  #endif
 
   if (argc < 2)
   {
+    #ifdef unix
     if (geteuid() == 0)
     {
         exit(1);
     }
+    #endif
     cout<<"Type something first!"<<endl;
     achievement("Ooh, What Does This Do?");
     exit(1);
