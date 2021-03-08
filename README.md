@@ -2,6 +2,7 @@
 `sudo`? How about no?
 
 This program works like `sudo` except it does absolutely nothing. Think of it like an extended version of [`sudont`](https://github.com/cbondurant/sudont).
+When compiling on Windows with MinGW, you must specify `-static-libgcc -static-libstdc++`.
 
 Options:
 
