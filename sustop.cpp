@@ -12,8 +12,11 @@ void achievement(string message)
 {
     /* Prints to the console "Achievement Get: <achievement text>"
     with "Achievement Get:" in yellow. */
-
+    #ifdef unix
     cout<<"\033[33mAchievement Get:\033[0m " << message << endl << endl;
+    #else
+    cout<<"Achievement Get: " << message << endl << endl;
+    #endif
 }
 
 int main(int argc, char *argv[])
