@@ -1,7 +1,7 @@
 # `sustop`
 `sudo`? How about no?
 
-This program works like `sudo` except it does absolutely nothing. Think of it like an extended version of [`sudont`](https://github.com/cbondurant/sudont).
+This program works like `sudo`, but it's the exact opposite of useful.
 When compiling on Windows with MinGW, you must specify `-static-libgcc -static-libstdc++`.
 
 Options:
