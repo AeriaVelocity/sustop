@@ -1,23 +1,22 @@
-# `sustop`
-`sudo`? How about no?
+# Don't `doas`!
+`doas yay -Syu useless-git`
 
-This program works like `sudo`, but it's the exact opposite of useful.
-When compiling on Windows with MinGW, you must specify `-static-libgcc -static-libstdc++`.
+This program works like `sudo` or `doas`, but it's the exact opposite of useful.
 
 Options:
 
-`sustop filename` - Opens a program -- wait, never mind, it doesn't.
+`dontdoas filename` - Opens a program -- wait, never mind, it doesn't.
 
-`sustop -s` - Grants "root" access
+`dontdoas -s` - Grants "root" access
 
-`sustop -v` - Prints the version number
+`dontdoas -v` - Prints the version number
 
-`sustop -h` - Prints "help"
+`dontdoas -h` - Prints "help"
 
-`sustop --help`- Displays this message in your command prompt/terminal
+`dontdoas --help`- Displays this message in your command prompt/terminal
 
-`sustop -k` - Terminates itself
+`dontdoas -k` - Terminates itself
 
-`sustop -b` - Attempts to run `sustop` in the background
+`dontdoas -b` - Attempts to run `dontdoas` in the background
 
-`sustop --install` - Installs the program
+`dontdoas --install` - Installs the program
