@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
   
   if (argc > 2)
   {
-      cout<<"dontdoas cannot handle this amount of words. Please stop."<<endl;
+      cout<<"sustop cannot handle this amount of words. Please stop."<<endl;
       achievement("Hippopotomonstrosesquipedaliophobia-itis");
       return 0;
   }
@@ -66,33 +66,33 @@ int main(int argc, char *argv[])
 
   if (strcmp(argv[1], "-v") == 0)
   {
-      cout<<"dontdoas version 1 episode 1"<<endl;
+      cout<<"sustop version 1 episode 1 chapter 1"<<endl;
       return 0;
   }
 
   if (strcmp(argv[1], "-h") == 0)
   {
-      cout<<"dontdoas is a joke command that does absolutely nothing of importance."<<endl<<endl<<"Feel free to check me out at https://github.com/That1M8Head."<<endl;
+      cout<<"sustop is a joke command that does absolutely nothing of importance."<<endl<<endl<<"Feel free to check me out at https://github.com/That1M8Head."<<endl;
       return 0;
   }
 
   if (strcmp(argv[1], argv[0]) == 0)
   {
-      cout<<"Fatal: dontdoas got stuck in an infinite loop"<<endl;
+      cout<<"Fatal: sustop got stuck in an infinite loop"<<endl;
       achievement("I used the stones to destroy the stones");
       return 0;
   }
 
   if (strcmp(argv[1], "--help") == 0)
   {
-      cout<<"dontdoas filename - Absolutely nothing"<<endl;
-      cout<<"dontdoas -s - Grants 'root' access"<<endl;
-      cout<<"dontdoas -v - Prints the version number"<<endl;
-      cout<<"dontdoas -h - Prints 'help'"<<endl;
-      cout<<"dontdoas --help - Displays this message"<<endl;
-      cout<<"dontdoas -k - Terminates itself"<<endl;
-      cout<<"dontdoas -b - Attempts to run sustop in the background"<<endl;
-      cout<<"dontdoas --install - Installs the program"<<endl;
+      cout<<"sustop filename - Absolutely nothing"<<endl;
+      cout<<"sustop -s - Grants 'root' access"<<endl;
+      cout<<"sustop -v - Prints the version number"<<endl;
+      cout<<"sustop -h - Prints 'help'"<<endl;
+      cout<<"sustop --help - Displays this message"<<endl;
+      cout<<"sustop -k - Terminates itself"<<endl;
+      cout<<"sustop -b - Attempts to run sustop in the background"<<endl;
+      cout<<"sustop --install - Installs the program"<<endl;
       return 0;
   }
 
@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
       cout<<"This program lacks the privileges to install itself and is too lazy to request them."<<endl<<endl;
       cout<<"On macOS, Linux or any other Unix-based system, type 'cp ./sustop /usr/bin' as root."<<endl;
       cout<<"You may have to elevate with an actually useful program."<<endl<<endl;
-      cout<<"On Windows, just copy 'dontdoas.exe' to a folder that is in your PATH."<<endl;
+      cout<<"On Windows, just copy 'sustop.exe' to a folder that is in your PATH."<<endl;
       cout<<"This is usually C:\\Windows\\System32, but you can configure this."<<endl;
       return 0;
   }
